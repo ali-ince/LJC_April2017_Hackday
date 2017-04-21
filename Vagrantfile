@@ -2,7 +2,7 @@ $script = <<SCRIPT
 sudo apt-get update
 sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
-sudo apt-get install -y lubuntu-desktop virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+sudo apt-get install -y lubuntu-desktop virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 tree wget git
 mkdir /home/vagrant/Desktop
 SCRIPT
 
