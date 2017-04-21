@@ -64,6 +64,10 @@ Vagrant.configure("2") do |config|
     v.memory = 8192 
     v.cpus = 4
     v.gui = true
+
+    v.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
+    v.customize ["modifyvm", :id, "--vram", "128"]
+    v.customize ["modifyvm", :id, "--accelerate3d", "on"]
   end
 
   config.vm.provision "shell", inline: $script
